@@ -10,3 +10,21 @@ for i in range(1,100+1):
     if(i == 1):
       continue
     prime_numbers.append(i)
+
+
+fibanosis_series
+def fibanosis(n):
+  if(n == 0):
+    return()
+  elif(n == 1):
+    return(0)
+  elif(n == 2):
+    return(0,1)
+  else:
+    fibanosis = (0,1)
+    for i in range(2,n):
+      fibanosis += ((fibanosis[i-1]+fibanosis[i-2]),)
+    return fibanosis
+
+n = 16 
+print(fibanosis(n))
